@@ -155,7 +155,7 @@ void main() {
   col += triDither(gl_FragCoord.xy) * uDither;
 
   fragColor = vec4(clamp(col, 0.0, 1.0), 1.0);
-}`,Lf={bgColor:"#07070c",colorA:"#0c0a0a",colorB:"#3b2c1c",colorC:"#c4a070",colorD:"#e2ddd5",scale:1.1,speed:.33,drift:.22,spread:1.15,falloff:1.5,softCore:.03,waveNumber:34,pulse:1.8,detune:.11,twist:.35,warp:.1,warpScale:1.7,gain:1.05,caustic:.8,sharp:2.8,contrast:1.6,midpoint:.33,sink:.55,glow:.04,grain:.035,grainAnim:0,dither:1.05,vignette:.3,pointerRadius:.7,pointerStrength:.55,pointerLift:.06,parallax:.0025,maxDpr:1},iy=`#version 300 es
+}`,Lf={bgColor:"#07070c",colorA:"#05070f",colorB:"#14244a",colorC:"#4a78c2",colorD:"#cfdcf2",scale:1.1,speed:.33,drift:.22,spread:1.15,falloff:1.5,softCore:.03,waveNumber:34,pulse:1.8,detune:.11,twist:.35,warp:.1,warpScale:1.7,gain:1.05,caustic:.8,sharp:2.8,contrast:1.6,midpoint:.33,sink:.55,glow:.04,grain:.035,grainAnim:0,dither:1.05,vignette:.3,pointerRadius:.7,pointerStrength:.55,pointerLift:.06,parallax:.0025,maxDpr:1},iy=`#version 300 es
 void main() {
   vec2 p = vec2((gl_VertexID << 1) & 2, gl_VertexID & 2);
   gl_Position = vec4(p * 2.0 - 1.0, 0.0, 1.0);
